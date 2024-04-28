@@ -1,21 +1,13 @@
 package com.app.mindversity
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HealthFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HealthFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -34,19 +26,34 @@ class HealthFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_health, container, false)
+        val view = inflater.inflate(R.layout.fragment_health, container, false)
+
+
+        // Initialize RecyclerView
+        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(activity)
+        val items = listOf(
+            ListItem("Item 1", "Details for Item 1"),
+            ListItem("Lesson 1", "Information about Lesson 1!"),
+            ListItem("Lesson 2", "Information about Lesson 2!"),
+            ListItem("Lesson 3", "Information about Lesson 3!"),
+            ListItem("Lesson 4", "Information about Lesson 4!"),
+            ListItem("Lesson 5", "Information about Lesson 5!"),
+            ListItem("Lesson 6", "Information about Lesson 6!"),
+            ListItem("Lesson 7", "Information about Lesson 7!"),
+            ListItem("Lesson 8", "Information about Lesson 8!"),
+            ListItem("Lesson 9", "Information about Lesson 9!")
+        )
+        val adapter = ListAdapterH(items)
+        recyclerView.adapter = adapter
+
+        return view
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HealthFragment.
-         */
-        // TODO: Rename and change types and number of parameters
+        private const val ARG_PARAM1 = "param1"
+        private const val ARG_PARAM2 = "param2"
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             HealthFragment().apply {

@@ -3,13 +3,11 @@ package com.app.mindversity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import android.widget.ImageView
-import android.widget.Spinner
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ListAdapter(private val items: List<ListItem>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class ListAdapterH(private val items: List<ListItem>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     // ViewHolder types
     private val VIEW_TYPE_DEFAULT = 0
@@ -18,7 +16,7 @@ class ListAdapter(private val items: List<ListItem>) : RecyclerView.Adapter<Recy
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
             VIEW_TYPE_IMAGE -> {
-                val view = LayoutInflater.from(parent.context).inflate(R.layout.item_image, parent, false)
+                val view = LayoutInflater.from(parent.context).inflate(R.layout.item_image_h, parent, false)
                 ImageViewHolder(view)
             }
             else -> {

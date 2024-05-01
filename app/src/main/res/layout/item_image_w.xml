@@ -1,16 +1,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/handslogo"
-        android:scaleType="fitCenter"
+        android:layout_width="199dp"
+        android:layout_height="206dp"
+        android:layout_margin="8dp"
         android:adjustViewBounds="true"
-        android:layout_margin="8dp"/>
+        android:scaleType="fitCenter"
+        android:src="@drawable/handslogo"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/textViewHeader"

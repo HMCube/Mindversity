@@ -7,15 +7,38 @@
     android:background="#333333"
     tools:context=".MainActivity">
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/bottomNavigationView"
+        android:layout_above="@id/workoutBar"
         android:textColor="@android:color/white"
         android:layout_centerVertical="true"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp" />
+
+    <ProgressBar
+        android:id="@+id/workoutBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="7"
+        android:progress="0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/exerciseCounterBttn"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="@color/black"
+        />
+    <Button
+        android:id="@+id/exerciseCounterBttn"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/bottomNavigationView"
+        android:backgroundTintMode="src_over"
+
+        />
+
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

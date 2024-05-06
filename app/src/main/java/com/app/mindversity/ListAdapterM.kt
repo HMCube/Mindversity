@@ -3,6 +3,7 @@ package com.app.mindversity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -39,11 +40,13 @@ class ListAdapterM(private val items: List<ListItem>) : RecyclerView.Adapter<Rec
                     findViewById<TextView>(R.id.textViewDetails).text = currentItem.details
                     val arrowImage = findViewById<ImageView>(R.id.arrowImage)
                     val detailsText = findViewById<TextView>(R.id.textViewDetails)
+                    val button = findViewById<Button>(R.id.btn)
 
                     // Set click listener for arrow
                     arrowImage.setOnClickListener {
                         // Toggle visibility of details text
                         detailsText.visibility = if (detailsText.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+                        button.visibility = detailsText.visibility
                         // Rotate arrow icon
                         val rotationAngle = if (detailsText.visibility == View.VISIBLE) 180f else 0f
                         arrowImage.rotation = rotationAngle

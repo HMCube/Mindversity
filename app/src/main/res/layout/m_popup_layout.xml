@@ -19,4 +19,29 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/popupTitle"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/popupArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Mindfulness, a practice rooted in ancient Eastern traditions, has gained significant popularity in the West over the past few decades. At its core, mindfulness involves paying attention to the present moment with openness, curiosity, and without judgment. This simple yet profound practice has been found to have numerous benefits for mental, emotional, and physical well-being.
+
+Definition and History
+Mindfulness can be defined as the practice of being fully present and engaged with whatever we are doing at the moment, free from distraction or judgment, and aware of our thoughts and feelings without getting caught up in them. The term is derived from the Pali word sati, which means awareness or attention.
+
+        The origins of mindfulness can be traced back over 2,500 years to the teachings of Siddhartha Gautama, known as the Buddha. Mindfulness is a central component of Buddhist meditation practices, particularly in the Theravada and Zen traditions. However, the principles of mindfulness are also found in other spiritual and philosophical traditions, including Hinduism, Taoism, and Stoicism."
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
+
+    </ScrollView>
+
 </RelativeLayout>

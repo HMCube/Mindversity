@@ -1,38 +1,43 @@
-<!-- popup_layout.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="10dp"
-    android:layout_height="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_marginStart="32dp"
     android:layout_marginTop="32dp"
     android:layout_marginEnd="32dp"
     android:layout_marginBottom="32dp"
-    android:background="#000000"> <!-- semi-transparent black background -->
+    android:background="#000000">
 
     <!-- Placeholder UI elements -->
     <TextView
         android:id="@+id/popupTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Embracing Wellness: A Journey to a Healthy Lifestyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Navigating Nutrition: Fueling Your College Journey"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:id="@+id/popupArticle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="In today's fast-paced world, where schedules are packed and stress levels run high, prioritizing health often takes a backseat. However, maintaining a healthy lifestyle is crucial for overall well-being and longevity. From physical fitness to mental well-being, every aspect of our lives can be positively impacted by adopting healthy habits. Here's a brief guide to embark on the journey towards a healthier you:
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/popupTitle"
+        android:layout_marginTop="16dp">
 
-Nourish Your Body:
-A balanced diet is the cornerstone of good health. Make sure to incorporate plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats into your meals. Avoid processed foods and excessive sugar and salt intake. Stay hydrated by drinking an adequate amount of water throughout the day.
+        <TextView
+            android:id="@+id/popupArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="As college students, navigating the maze of meal options can sometimes feel like a daunting task. From late-night pizza runs to cafeteria buffets brimming with tempting treats, maintaining a balanced diet may seem like a distant goal. However, with a little know-how and some strategic planning, you can fuel your college journey with nutritious choices that support your academic success and overall well-being.\n\nFirstly, it's essential to familiarize yourself with the dining options available on campus. Many universities offer a variety of meal plans, ranging from unlimited access to the dining hall to flexible swipe systems for on-the-go meals. Take the time to explore your options and identify healthy choices within each dining venue. Look for whole foods like fruits, vegetables, lean proteins, and whole grains to form the foundation of your meals.\n\nAdditionally, mastering the art of meal prep can be a game-changer for busy college students. Investing a few hours each week in planning and preparing meals can save you time, money, and stress in the long run. Consider batch cooking staples like grains, proteins, and roasted vegetables that can be mixed and matched throughout the week. Investing in portable containers and reusable water bottles makes it easy to take your meals and snacks with you wherever your day takes you.\n\nWhile it's important to prioritize nutritious choices, it's also essential to practice flexibility and moderation. College life is full of social gatherings, late-night study sessions, and occasional indulgences. Allow yourself to enjoy these experiences while maintaining a balanced overall diet. Remember, it's not about perfection but rather about making consistent, sustainable choices that support your health and well-being over the long term.\n\nIn conclusion, navigating nutrition in college is all about finding balance amidst a sea of options. By familiarizing yourself with campus dining choices, mastering the art of meal prep, and practicing flexibility and moderation, you can fuel your college journey with nourishing foods that support your academic success and overall well-being. So, stock up on your favorite healthy snacks, plan your meals with intention, and remember to savor the journey one bite at a time."
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"/>
 
-"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:layout_below="@id/popupTitle"/>
-
+    </ScrollView>
 </RelativeLayout>

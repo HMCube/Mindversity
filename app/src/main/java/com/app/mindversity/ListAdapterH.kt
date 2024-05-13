@@ -68,7 +68,7 @@ class ListAdapterH(private val items: List<ListItem>) : RecyclerView.Adapter<Rec
 
                         // Create a PopupWindow with the inflated layout
                         val focusable = true // Allows touches outside the popup to dismiss it
-                        val popupWindow = PopupWindow(popupView, 800, 1200, focusable)
+                        val popupWindow = PopupWindow(popupView, 900, 1500, focusable)
 
                         // Show the pop-up screen centered in the window
                         popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0)

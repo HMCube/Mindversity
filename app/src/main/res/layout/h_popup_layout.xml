@@ -13,10 +13,26 @@
         android:id="@+id/popupTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Health Popup Title"
+        android:text="Embracing Wellness: A Journey to a Healthy Lifestyle"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/popupArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In today's fast-paced world, where schedules are packed and stress levels run high, prioritizing health often takes a backseat. However, maintaining a healthy lifestyle is crucial for overall well-being and longevity. From physical fitness to mental well-being, every aspect of our lives can be positively impacted by adopting healthy habits. Here's a brief guide to embark on the journey towards a healthier you:
+
+Nourish Your Body:
+A balanced diet is the cornerstone of good health. Make sure to incorporate plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats into your meals. Avoid processed foods and excessive sugar and salt intake. Stay hydrated by drinking an adequate amount of water throughout the day.
+
+"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/popupTitle"/>
 
 </RelativeLayout>

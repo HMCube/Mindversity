@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.PopupWindow
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -65,11 +64,11 @@ class ListAdapterH(private val items: List<ListItem>) : RecyclerView.Adapter<Rec
                     button.setOnClickListener {
                         // Inflate the layout for the pop-up screen
                         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-                        val popupView = inflater.inflate(R.layout.popup_layout, null)
+                        val popupView = inflater.inflate(R.layout.h_popup_layout, null)
 
                         // Create a PopupWindow with the inflated layout
                         val focusable = true // Allows touches outside the popup to dismiss it
-                        val popupWindow = PopupWindow(popupView, 1200, 2200, focusable)
+                        val popupWindow = PopupWindow(popupView, 800, 1200, focusable)
 
                         // Show the pop-up screen centered in the window
                         popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0)

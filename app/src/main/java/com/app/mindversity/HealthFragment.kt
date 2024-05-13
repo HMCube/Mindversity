@@ -34,15 +34,15 @@ class HealthFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(activity)
         val items = listOf(
             ListItem("Item 1", "Details for Item 1"),
-            ListItem("Lesson 1", "Information about Lesson 1!"),
-            ListItem("Lesson 2", "Information about Lesson 2!"),
-            ListItem("Lesson 3", "Information about Lesson 3!"),
-            ListItem("Lesson 4", "Information about Lesson 4!"),
-            ListItem("Lesson 5", "Information about Lesson 5!"),
-            ListItem("Lesson 6", "Information about Lesson 6!"),
-            ListItem("Lesson 7", "Information about Lesson 7!"),
-            ListItem("Lesson 8", "Information about Lesson 8!"),
-            ListItem("Lesson 9", "Information about Lesson 9!")
+            ListItem("Navigating Nutrition", "Get ready to master your meals with 'Navigating Nutrition: Fueling Your College Journey'! Discover how to make healthy food choices that keep you energized and focused throughout your academic adventures. Let's dive in!"),
+            ListItem("Stress Less, Live More", "Information about Lesson 2!"),
+            ListItem("The Art of ZZZs", "Information about Lesson 3!"),
+            ListItem("Fit for Finals", "Information about Lesson 4!"),
+            ListItem("Smart Snacking", "Information about Lesson 5!"),
+            ListItem("Balancing Act", "Information about Lesson 6!"),
+            ListItem("Heart Health on Campus", "Information about Lesson 7!"),
+            ListItem("Mind Matters", "Information about Lesson 8!"),
+            ListItem("Hydrate to Graduate", "Information about Lesson 9!")
         )
         val adapter = ListAdapterH(items)
         recyclerView.adapter = adapter

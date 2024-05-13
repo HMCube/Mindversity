@@ -34,16 +34,16 @@ class MindfullnessFragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView1)
         recyclerView.layoutManager = LinearLayoutManager(activity)
         val items = listOf(
-            ListItem("Item 1","Details for Item 1"),
-            ListItem("Lesson 1", "Information about Lesson 1!"),
-            ListItem("Lesson 2", "Information about Lesson 2!"),
-            ListItem("Lesson 3", "Information about Lesson 3!"),
-            ListItem("Lesson 4", "Information about Lesson 4!"),
-            ListItem("Lesson 5", "Information about Lesson 5!"),
-            ListItem("Lesson 6", "Information about Lesson 6!"),
-            ListItem("Lesson 7", "Information about Lesson 7!"),
-            ListItem("Lesson 8", "Information about Lesson 8!"),
-            ListItem("Lesson 9", "Information about Lesson 9!")
+            ListItem("Item 1", "Details for Item 1"),
+            ListItem("Introduction to Mindfulness", "Information about Lesson 1!"),
+            ListItem("Mindfulness Meditation", "Information about Lesson 2!"),
+            ListItem("Mindfulness in Daily Life", "Information about Lesson 3!"),
+            ListItem("Research on Mindfulness", "Information about Lesson 4!"),
+            ListItem("Mindfulness for Stress", "Information about Lesson 5!"),
+            ListItem("Mindfulness in Education", "Information about Lesson 6!"),
+            ListItem("Mindfulness in the Workplace", "Information about Lesson 7!"),
+            ListItem("Emotional Regulation", "Information about Lesson 8!"),
+            ListItem("Mindfulness and Relationships", "Information about Lesson 9!")
         )
         val adapter = ListAdapterM(items)
         recyclerView.adapter = adapter

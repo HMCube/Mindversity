@@ -14,7 +14,6 @@ class WellnessFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private lateinit var btnWOne: Button // Declare the button variable
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,15 +36,15 @@ class WellnessFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(activity)
         val items = listOf(
             ListItem("Item 1", "Details for Item 1"),
-            ListItem("Lesson 1", "Information about Lesson 1!"),
-            ListItem("Lesson 2", "Information about Lesson 2!"),
-            ListItem("Lesson 3", "Information about Lesson 3!"),
-            ListItem("Lesson 4", "Information about Lesson 4!"),
-            ListItem("Lesson 5", "Information about Lesson 5!"),
-            ListItem("Lesson 6", "Information about Lesson 6!"),
-            ListItem("Lesson 7", "Information about Lesson 7!"),
-            ListItem("Lesson 8", "Information about Lesson 8!"),
-            ListItem("Lesson 9", "Information about Lesson 9!")
+            ListItem("Yoga Flow", "Information about Lesson 1!"),
+            ListItem("Healthy Dorm Cooking", "Information about Lesson 2!"),
+            ListItem("Nature Walks", "Information about Lesson 3!"),
+            ListItem("Art Therapy Workshop", "Information about Lesson 4!"),
+            ListItem("Mindfulness Meditation", "Information about Lesson 5!"),
+            ListItem("Fitness Fusion", "Information about Lesson 6!"),
+            ListItem("Stress Buster Bootcamp", "Information about Lesson 7!"),
+            ListItem("Self-Care Spa Day", "Information about Lesson 8!"),
+            ListItem("Mindful Moments", "Information about Lesson 9!")
         )
         val adapter = ListAdapterW(items)
         recyclerView.adapter = adapter

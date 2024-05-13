@@ -80,6 +80,7 @@ class ListAdapterH(private val items: List<ListItem>) : RecyclerView.Adapter<Rec
                         lp.alpha = dimAmount
                         (context as Activity).window.attributes = lp
 
+                        //basepush comment
                         // Set a dismiss listener to remove the dim effect when the pop-up is dismissed
                         popupWindow.setOnDismissListener {
                             val lp = (context as Activity).window.attributes

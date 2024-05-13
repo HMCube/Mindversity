@@ -1,10 +1,14 @@
 package com.app.mindversity
 
+import android.app.Activity
+import android.content.Context
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.PopupWindow
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -50,6 +54,34 @@ class ListAdapterM(private val items: List<ListItem>) : RecyclerView.Adapter<Rec
                         // Rotate arrow icon
                         val rotationAngle = if (detailsText.visibility == View.VISIBLE) 180f else 0f
                         arrowImage.rotation = rotationAngle
+                    }
+                    // Set click listener for button
+                    button.setOnClickListener {
+                        // Inflate the layout for the pop-up screen
+                        val inflater =
+                            context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+                        val popupView = inflater.inflate(R.layout.m_popup_layout, null)
+
+                        // Create a PopupWindow with the inflated layout
+                        val focusable = true // Allows touches outside the popup to dismiss it
+                        val popupWindow = PopupWindow(popupView, 800, 1200, focusable)
+
+                        // Show the pop-up screen centered in the window
+                        popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0)
+
+                        // Set background dim amount (adjust to your preference)
+                        val dimAmount = 0.5f
+                        val lp = (context as Activity).window.attributes
+                        lp.alpha = dimAmount
+                        (context as Activity).window.attributes = lp
+
+                        //basepush comment
+                        // Set a dismiss listener to remove the dim effect when the pop-up is dismissed
+                        popupWindow.setOnDismissListener {
+                            val lp = (context as Activity).window.attributes
+                            lp.alpha = 1f
+                            (context as Activity).window.attributes = lp
+                        }
                     }
                 }
             }

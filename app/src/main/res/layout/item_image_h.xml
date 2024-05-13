@@ -16,22 +16,23 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="199dp"
-        android:layout_height="206dp"
-        android:layout_margin="8dp"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="2dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/heartlogo"
-        android:layout_gravity="center_horizontal" />
+        android:src="@drawable/heart" />
 
-    <TextView
-        android:id="@+id/textViewHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textColor="@android:color/white"
-        android:text="Health"
-        android:textAlignment="center"/>
+    <ImageView
+        android:id="@+id/htxt"
+        android:layout_width="800dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="2dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/htxt" />
 
     <TextView
         android:id="@+id/textViewDetails"

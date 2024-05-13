@@ -36,7 +36,7 @@ class WellnessFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(activity)
         val items = listOf(
             ListItem("Item 1", "Details for Item 1"),
-            ListItem("Yoga Flow", "Information about Lesson 1!"),
+            ListItem("Yoga Flow", "Yoga Flow: Discover the transformative power of movement, breath, and mindfulness with our invigorating yoga class. Join us as we flow through dynamic sequences designed to enhance flexibility, strength, and inner calm. Whether you're a seasoned yogi or new to the mat, come experience the rejuvenating benefits of this holistic practice."),
             ListItem("Healthy Dorm Cooking", "Information about Lesson 2!"),
             ListItem("Nature Walks", "Information about Lesson 3!"),
             ListItem("Art Therapy Workshop", "Information about Lesson 4!"),

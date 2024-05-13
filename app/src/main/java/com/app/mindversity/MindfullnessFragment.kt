@@ -34,7 +34,7 @@ class MindfullnessFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(activity)
         val items = listOf(
             ListItem("Item 1", "Details for Item 1"),
-            ListItem("Introduction to Mindfulness", "Information about Lesson 1!"),
+            ListItem("Introduction to Mindfulness", "Introduction to Mindfullnes offers college students a practical entry point into the transformative practice of mindfulness. Through guided meditation and mindful breathing exercises, participants learn to cultivate present-moment awareness, reduce stress, and enhance overall well-being. This engaging activity empowers students to incorporate mindfulness into their daily lives, fostering greater focus, resilience, and inner peace amidst the demands of academic life"),
             ListItem("Mindfulness Meditation", "Information about Lesson 2!"),
             ListItem("Mindfulness in Daily Life", "Information about Lesson 3!"),
             ListItem("Research on Mindfulness", "Information about Lesson 4!"),
